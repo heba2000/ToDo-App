@@ -11,14 +11,7 @@ function Todo({todos , completeTodo , removeToDo}) {
                 { `${todo.id}:  ${todo.toDoName}`  }
             </div>
             <div className="icons"> 
-                {/* <FontAwesomeIcon className='mr-2' icon="edit" 
-                onClick={()=> setEdit({id:todo.id , value:todo.value})}
-                className = 'edit-icon'
-                /> */}
-                <FontAwesomeIcon className='mr-2' icon="trash" 
-                onClick={()=> removeToDo(todo.id)}
-                className = 'delete-icon'
-                />
+             <FontAwesomeIcon className='mr-2 delete-icon' icon="trash" onClick={()=> removeToDo(todo.id)} />
             </div>
         </div>
      ));

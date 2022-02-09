@@ -38,7 +38,7 @@ function ToDoForm(props) {
                         />
                         {formik.touched.toDoName && formik.errors.toDoName ? <Form.Text className="text-danger">{formik.errors.toDoName} </Form.Text> : null}
                     </Form.Group>
-                    <Button variant="danger" type="submit" className='todo-button float-end'>
+                    <Button variant="danger" type="submit" className='todo-button float-end fw-bold'>
                         ADD TODO
                     </Button>
                 </Form>
